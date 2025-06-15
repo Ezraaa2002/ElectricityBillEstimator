@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFE4E1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:paddingBottom="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="30dp">
+
+            <!-- Select Month -->
+            <TextView
+                android:text="Select Month"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/monthSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFB6C1" />
+
+            <View android:layout_width="match_parent" android:layout_height="16dp" />
+
+            <!-- Units Input -->
+            <TextView
+                android:text="Enter Units Used (kWh)"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/unitsEditText"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#888888"
+                android:textSize="17sp"
+                android:hint="e.g. 350"
+                android:backgroundTint="#FFB6C1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View android:layout_width="match_parent" android:layout_height="16dp" />
+
+            <!-- Rebate Input -->
+            <TextView
+                android:text="Rebate (%)"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/rebateEditText"
+                android:inputType="numberDecimal"
+                android:textColor="#000000"
+                android:textColorHint="#888888"
+                android:textSize="17sp"
+                android:hint="0 - 5"
+                android:backgroundTint="#FFB6C1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View android:layout_width="match_parent" android:layout_height="24dp" />
+
+            <!-- Calculate Button -->
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFB6C1"
+                android:text="Calculate and Save"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <View android:layout_width="match_parent" android:layout_height="12dp" />
+
+            <!-- View History Button -->
+            <Button
+                android:id="@+id/viewHistoryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFB6C1"
+                android:text="View Saved Bills"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <View android:layout_width="match_parent" android:layout_height="24dp" />
+
+            <!-- Output Results -->
+            <TextView
+                android:id="@+id/totalChargesTextView"
+                android:text="Total Charges:"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:id="@+id/finalCostTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Final Cost:"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <!-- Bottom Spacer -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFE4E1"
+    android:padding="16dp">
+
+    <!-- Empty Message -->
+    <TextView
+        android:id="@+id/emptyMessageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No history yet"
+        android:textColor="#888888"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="200dp"
+        android:padding="150dp"
+        android:visibility="gone" />
+
+    <!-- ListView -->
+    <ListView
+        android:id="@+id/billListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#FFB6C1"
+        android:dividerHeight="1dp" />
+
+    <!-- Select/Deselect Buttons -->
+    <LinearLayout
+        android:id="@+id/selectButtonsRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:visibility="gone"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/selectAllButton"
+            android:text="Select All"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6A1B9A"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/deselectAllButton"
+            android:text="Deselect"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6A1B9A"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Delete Button -->
+    <Button
+        android:id="@+id/deleteButton"
+        android:text="Delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#E53935"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

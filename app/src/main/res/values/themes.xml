@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.ElectricityBillEstimator" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!-- Title bar (AppBar) background -->
+        <item name="colorPrimary">#000000</item> <!-- Black title bar -->
+        <item name="colorPrimaryVariant">#000000</item>
+
+        <!-- Title text on the title bar -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- White title text -->
+
+        <!-- Optional: secondary for buttons -->
+        <item name="colorSecondary">#FFB6C1</item>
+        <item name="colorOnSecondary">#000000</item>
+
+        <!-- Optional: status/navigation bar -->
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:navigationBarColor">#000000</item>
+    </style>
+</resources>
